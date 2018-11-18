@@ -1,0 +1,24 @@
+$screen-sm-max: 484px;
+$screen-ls-min: 1650px;
+
+@media (max-width: $screen-sm-max) {
+  .blog-img {
+    width: 360px ;
+    height: 280px ;
+  }
+  .contact-text {
+    width: 100% ;
+  }
+  .container-nav {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: $screen-ls-min) {
+  .contact-text {
+    width: 60% ;
+  }
+  .container-nav {
+    font-size: 1.3em;
+  }
+}

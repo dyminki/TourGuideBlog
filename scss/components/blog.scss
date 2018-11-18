@@ -1,0 +1,35 @@
+.blog-container {
+  @include container-base;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.blog-header {
+  @include container-base;
+  @include header-base;
+  background-color: #191919;
+  height: 15vh;
+}
+
+.blog-img {
+  height: 350px;
+  width: 500px;
+  margin-bottom: 2em;
+  animation: fade 1s ease;
+}
+
+.blog-btn {
+  display: flex;
+  &__preview {
+    padding: 0 10px;
+  }
+}
+
+.post-container {
+  @include container-base;
+  margin: 10% auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+

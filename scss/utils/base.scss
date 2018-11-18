@@ -1,0 +1,205 @@
+/*------------------------------*/
+/*---- Fonts ----*/
+/*------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+
+/*------------------------------*/
+/*---- Colors ----*/
+/*------------------------------*/
+$colorBackground: rgb(249, 249, 249);
+$linkColorMain: rgb(66, 66, 66);
+
+/*------------------------------*/
+/*---- Mixins ----*/
+/*------------------------------*/
+@mixin container-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin txt-base {
+  max-width: 500px;
+  margin: 0 2em 2em 2em;
+  text-align: left;
+  p {
+    font-weight: 300;
+  }
+}
+
+@mixin header-base {
+  width: 100%;
+  color: #efeeee;
+  h1 {
+    font-size: 3em;
+    padding: 0.1em 1em;
+  }
+}
+/*------------------------------*/
+/*---- Base ----*/
+/*------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  background-color: $colorBackground;
+  font-size: 16px;
+  width: 100%;
+}
+body {
+  font-family: "Lora", serif;
+  color: $linkColorMain;
+  a {
+    display: inline-block;
+    color: $linkColorMain;
+    text-decoration: none;
+    font-size: 1.7em;
+    margin-top: 0.3em;
+    padding: 0.3em 0.5em;
+  }
+}
+
+.container {
+  @include container-base;
+  margin: 2em auto;
+}
+.container100 {
+  width: 100%;
+}
+
+/*------------------------------*/
+/*---- Strikethrough animation ----*/
+/*------------------------------*/
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before,
+span:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: $linkColorMain;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: $linkColorMain;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: $linkColorMain;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+/*------------------------------*/
+/*---- Navigation ----*/
+/*------------------------------*/
+
+.container-nav {
+  position: sticky;
+  top: 0;
+  background: $colorBackground;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-top: 30px;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      display: block;
+    }
+  }
+}
+
+.header {
+  @include container-base;
+  background-image: url(../images/main.jpg);
+  background-size: cover;
+  height: 93.4vh;
+  color: $colorBackground;
+  animation: fade 1s ease;
+  width: 100%;
+  h1 {
+    font-size: 3em;
+    background-color: #000000a6;
+    padding: 0.1em 1em;
+    animation: moveInLeft 1s ease;
+  }
+  span {
+    display: inline-block;
+    font-size: 1em;
+    background-color: #000000a6;
+    padding: 0.1em 1em;
+  }
+}
+
+.txt {
+  @include txt-base;
+  animation: fade 1s ease;
+}
+
+/*------------------------------*/
+/*---- Animations ----*/
+/*------------------------------*/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

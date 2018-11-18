@@ -1,0 +1,54 @@
+.contract-container {
+  @include container-base;
+  @include header-base;
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  color: #efeeee;
+  h1 {
+    background-color: #00000033;
+  }
+}
+
+.contact-text {
+  padding: 2em;
+  margin: 0 auto;
+  width: 66%;
+  background-color: #fff;
+  animation: fade 1s ease;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    margin: 0 3px;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(45, 44, 44);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4d4d4d;
+}
