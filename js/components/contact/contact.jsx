@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Instagram, Facebook, Linkedin } from 'react-feather';
 
-class Contact extends React.Component {
+class Contact extends Component {
   render() {
     return (
       <div>

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Post extends React.Component {
+class Post extends Component {
   constructor(props) {
     super(props);
   }

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 
 import { Post } from "./post.jsx";
 
-class Blog extends React.Component {
+class Blog extends Component {
   render() {
     const links = [1, 2, 3, 4, 5, 6].map((elem, i) => {
       return (
