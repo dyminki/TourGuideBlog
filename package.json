@@ -1,5 +1,5 @@
 {
-  "name": "2_router",
+  "name": "TourGuideBlog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --env.dev --inline --hot --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "dyminki",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
