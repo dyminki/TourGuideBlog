@@ -1,19 +1,15 @@
 import React, { Component } from "react";
-import { Instagram, Facebook, Linkedin } from 'react-feather';
 
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <div className="contract-container">
-          <h1>contact</h1>
+      <div className="contract-container">
+        <div className="contract-picture" data-aos="fade-left"
+        data-aos-duration="2000">
         </div>
-        <div className="contact-text">
-        <div className="social-container">
-        <a href="/"> <Instagram size={20}/></a>
-        <a href="/"><Facebook size={20}/></a>
-        <a href="/"><Linkedin size={20}/></a>
-        </div>
+        <div className="contact-text" data-aos="fade-left"
+        data-aos-duration="2000">
+          <h2>Looking for contact?</h2>
           <form>
             <label>name</label>
             <input name="name" type="text" />

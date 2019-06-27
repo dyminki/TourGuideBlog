@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-      <div className="about-container">
-        <div className="about-photo" />
-        <div className="about-txt">
+      <div className="about-container" >
+        <div className="about-photo" data-aos="fade-right"
+        data-aos-duration="2000"/>
+        <div className="about-txt" data-aos="fade-right"
+        data-aos-duration="2000">
           <h1>I'm John Doe</h1>
           <br />
           <p>

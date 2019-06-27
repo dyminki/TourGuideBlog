@@ -1,7 +1,6 @@
 .about-container {
   @include container-base;
-  margin: 0 auto;
-  margin-top: 10vh;
+  margin: 5vh auto;
   flex-wrap: wrap;
 }
 
@@ -10,12 +9,10 @@
   background-size: cover;
   background-position: center;
   height: 450px;
-  min-width: 400px;
+  min-width: 320px;
   margin-bottom: 2em;
-  animation: moveInLeft 1s ease-out;
 }
 
 .about-txt {
   @include txt-base;
-  animation: moveInRight 1s ease-out;
 }

@@ -1,5 +1,9 @@
 import React from "react";
 import { HashRouter, Route, Switch, NavLink } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faFacebookSquare, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faFacebookSquare, faInstagram, faLinkedin)
 
 import { Home } from "./home/home.jsx";
 import { About } from "./about/about.jsx";
@@ -18,13 +22,13 @@ class App extends React.Component {
           <div className="container-nav">
             <div>
               <NavLink replace exact to="/" activeClassName="activeStyle">
-                J.DOE
+                <span className="logo">j.doe</span>
               </NavLink>
             </div>
             <ul>
               <li>
                 <NavLink replace exact to="/" activeClassName="activeStyle">
-                  <span>main</span>
+                  <span className="menu">main</span>
                 </NavLink>
               </li>
               <li>
@@ -34,12 +38,12 @@ class App extends React.Component {
                   to="/about"
                   activeClassName="activeStyle"
                 >
-                  <span>about</span>
+                  <span className="menu">about</span>
                 </NavLink>
               </li>
               <li>
                 <NavLink replace exact to="/blog" activeClassName="activeStyle">
-                  <span>blog</span>
+                  <span className="menu">blog</span>
                 </NavLink>
               </li>
               <li>
@@ -49,7 +53,7 @@ class App extends React.Component {
                   to="/contact"
                   activeClassName="activeStyle"
                 >
-                  <span>contact</span>
+                  <span className="menu">contact</span>
                 </NavLink>
               </li>
             </ul>

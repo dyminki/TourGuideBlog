@@ -1,8 +1,8 @@
 /*------------------------------*/
 /*---- Fonts ----*/
 /*------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap&subset=latin-ext');
 
 /*------------------------------*/
 /*---- Colors ----*/
@@ -32,10 +32,6 @@ $linkColorMain: rgb(66, 66, 66);
 @mixin header-base {
   width: 100%;
   color: #efeeee;
-  h1 {
-    font-size: 3em;
-    padding: 0.1em 1em;
-  }
 }
 /*------------------------------*/
 /*---- Base ----*/
@@ -52,13 +48,14 @@ $linkColorMain: rgb(66, 66, 66);
   width: 100%;
 }
 body {
-  font-family: "Lora", serif;
+  font-family: 'Lato', sans-serif;
   color: $linkColorMain;
+  font-weight: 300;
   a {
     display: inline-block;
     color: $linkColorMain;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.8em;
     margin-top: 0.3em;
     padding: 0.3em 0.5em;
   }
@@ -75,42 +72,44 @@ body {
 /*------------------------------*/
 /*---- Strikethrough animation ----*/
 /*------------------------------*/
-span {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-span:before,
-span:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: $linkColorMain;
-}
-
-span:before {
-  left: -2.5px;
-}
-span:after {
-  right: 2.5px;
-  background: $linkColorMain;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:before {
-  background: $linkColorMain;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
+.container-nav {
+  span.menu {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  span.menu:before,
+  span.menu:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: $linkColorMain;
+  }
+  
+  span.menu:before {
+    left: -2.5px;
+  }
+  span.menu:after {
+    right: 2.5px;
+    background: $linkColorMain;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span.menu:hover:before {
+    background: $linkColorMain;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span.menu:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
 }
 
 /*------------------------------*/
@@ -127,6 +126,10 @@ span:hover:after {
   font-size: 0.7rem;
   margin-top: 30px;
   width: 100%;
+  span.logo {
+    font-size: 2rem;
+    font-weight: 400;
+  }
   ul {
     list-style-type: none;
     display: flex;
@@ -136,25 +139,31 @@ span:hover:after {
   }
 }
 
+/*------------------------------*/
+/*---- Header ----*/
+/*------------------------------*/
+
 .header {
   @include container-base;
   background-image: url(../images/main.jpg);
   background-size: cover;
   height: 93.4vh;
   color: $colorBackground;
-  animation: fade 1s ease;
+  
   width: 100%;
+
   h1 {
     font-size: 3em;
-    background-color: #000000a6;
+    background-color: #000000d9;
+    font-weight: 400;
     padding: 0.1em 1em;
-    animation: moveInLeft 1s ease;
+    
   }
-  span {
-    display: inline-block;
-    font-size: 1em;
-    background-color: #000000a6;
-    padding: 0.1em 1em;
+
+  .header-span {
+    font-size: 74%;
+    font-weight: 300;
+    margin-right: 0.4em;
   }
 }
 

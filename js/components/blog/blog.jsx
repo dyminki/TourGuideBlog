@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 
 import { Post } from "./post.jsx";
+import {Footer} from '../footer/footer.jsx'
 
 class Blog extends Component {
   render() {
@@ -53,6 +54,7 @@ class Blog extends Component {
             <Post data={this.state.data} propsRouter={props.match} />
           )}
         />
+        <Footer />
       </div>
     );
   }

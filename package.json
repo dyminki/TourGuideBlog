@@ -13,6 +13,7 @@
   "author": "dyminki",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -32,11 +33,14 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "aos": "^3.0.0-beta.6",
     "copy-webpack-plugin": "^4.5.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "react-feather": "^1.1.4",
     "react-router-dom": "^4.3.1"
   }
 }

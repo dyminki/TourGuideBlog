@@ -1,0 +1,21 @@
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #ececec;
+    p{
+      margin: 1rem 0 1rem 0.5rem;
+      font-size: 0.9rem;
+      color: #9c9c9c;
+    }
+    .social-container_icon {
+      margin: 0 10px;
+      padding: 0;
+      cursor: pointer;
+      transition: all 0.5s ease ;
+      &:hover {
+        color: rgb(24, 24, 24);
+      }
+    }
+}
