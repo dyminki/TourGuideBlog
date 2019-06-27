@@ -10,7 +10,7 @@ class Header extends Component {
           data-aos-duration="3000">
             <h1>
               <span className="header-span">
-                Hi, My name is  
+                Hi, my name is  
               </span>
               John Doe
             </h1>
