@@ -4,11 +4,9 @@ class Contact extends Component {
   render() {
     return (
       <div className="contract-container">
-        <div className="contract-picture" data-aos="fade-left"
-        data-aos-duration="2000">
+        <div className="contract-picture">
         </div>
-        <div className="contact-text" data-aos="fade-left"
-        data-aos-duration="2000">
+        <div className="contact-text">
           <h2>Looking for contact?</h2>
           <form>
             <label>name</label>
