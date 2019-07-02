@@ -1,5 +1,7 @@
 # TourGuideBlog
-Exaple of website with blog.
+Exaple of website with blog.  
+
+[Live DEMO](https://dyminki.github.io/TourGuideBlog/)
 
 ### Build with
 - React
@@ -7,8 +9,6 @@ Exaple of website with blog.
 - SASS
 - Webpack
 - AOS
-
-[Live DEMO](https://dyminki.github.io/TourGuideBlog/)
 
 ### Screenshoot
 ![Image](https://github.com/dyminki/TourGuideBlog/blob/master/main.png)
