@@ -1,5 +1,5 @@
 # TourGuideBlog
-Exaple of website with blog.  
+Exaple of website with a blog.  
 
 [Live DEMO](https://dyminki.github.io/TourGuideBlog/)
 
